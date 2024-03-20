@@ -18,7 +18,7 @@ from unsplash_iterable_dataset import UnsplashIterableDataset
 
 dataset = UnsplashIterableDataset(
   topics=['animals', 'people'],
-  limit=6_000_000,
+  length=6_000_000,
 )
 
 dataloder = torch.utils.data.DataLoader(dataset=dataset, batch_size=4, shuffle=False)
