@@ -17,7 +17,7 @@ import torch
 from unsplash_iterable_dataset import UnsplashIterableDataset
 
 dataset = UnsplashIterableDataset(
-  topics=['people', 'street-photography'],
+  topic=['animals'],
   limit=1_000_000,
 )
 
