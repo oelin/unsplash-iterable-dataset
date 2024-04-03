@@ -50,7 +50,7 @@ def process_unsplash_results(topic: str, results: List) -> Iterable[Dict]:
         if result.get('plus'): continue
         if not (text := result.get('alt_description')): continue
         if not (urls := result.get('urls')): continue
-        if not (image_url := urls.get('full')): continue
+        if not (image_url := urls.get('regular')): continue
         if not (image := download_image(image_url)): continue
 
         # Optional fields.
